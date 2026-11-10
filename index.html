@@ -96,8 +96,8 @@ input:focus,select:focus{border-color:var(--pri)}
 <script>
 const K='kasku_v1';
 /* ==== KONFIGURASI SINKRON (isi di sini, bukan di tampilan webapp) ==== */
-const API_URL='';  // tempel URL Web App Apps Script, berakhiran /exec
-const API_KEY='';  // samakan dengan KEY di Code.gs
+const API_URL='https://script.google.com/macros/s/AKfycbzKVRtWwXiaFibwVOP2PNaIIXSwEa9BJXxMDKmieQO-Hs-ZuBs5I1m2DFnKqcWsVqm61Q/exec';  // tempel URL Web App Apps Script, berakhiran /exec
+const API_KEY='112233';  // samakan dengan KEY di Code.gs
 let S={q:[],seeded:false,tx:[],src:['Gaji','Freelance','Bisnis','Investasi','Lainnya'],cat:['Makanan','Transportasi','Tagihan','Belanja','Kesehatan','Hiburan','Pendidikan','Lainnya'],pin:null,theme:null};
 try{const r=localStorage.getItem(K);if(r)S=Object.assign(S,JSON.parse(r))}catch(e){}
 function save(){try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}}
